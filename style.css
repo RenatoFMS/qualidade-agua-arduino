@@ -1,0 +1,97 @@
+body {
+    background-color: #0f1a25;
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #074866;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: #1e2a38;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 220px;
+    box-shadow: inset 5px 0 #2b394b, inset -5px 0 #2b394b;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin: 0;
+    color: #ccc;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 5px 0 0;
+}
+
+.statusBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6b1d1d;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.statusBox.safe {
+    background-color: #1d6b2b;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0062cc;
+}
+
+.chart {
+    background-color: #1e2a38;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 600px;
+    box-shadow: inset 5px 0 #2b394b, inset -5px 0 #2b394b;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0f1a25;
+    font-size: 14px;
+    color: #aaa;
+}

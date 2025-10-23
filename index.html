@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidor de Potabilidade da Água</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Medidor de Potabilidade da Água</h1>
+    </header>
+
+    <main>
+        <section class="info">
+            <div class="card">
+                <h2>TDS (ppm)</h2>
+                <p id="tdsValue">0 ppm</p>
+            </div>
+            <div class="card">
+                <h2>Condutividade (µS/cm)</h2>
+                <p id="condValue">0 µS/cm</p>
+            </div>
+            <div class="card">
+                <h2>Dureza (mg/L)</h2>
+                <p id="hardValue">0 mg/L</p>
+            </div>
+
+            <div id="statusBox" class="statusBox">
+                <span id="statusIcon">⚠️</span>
+                <span id="statusText">Água não potável</span>
+            </div>
+
+            <button onclick="fetchData()">🔄 Atualizar Leituras</button>
+        </section>
+
+        <section class="chart">
+            <canvas id="waterChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 HydroMonitor - Monitoramento Inteligente da Água
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
